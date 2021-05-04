@@ -431,6 +431,38 @@ main>.row>div>:nth-child(3)>p:first-of-type>a:first-child{
         EX19) Write a function and attach it to the "Older" button, to remove the last Blog Post
         EX20) Write an alert with the name of the author every time the user hover with the mouse over an author name
     */
+   let addAnchor = function(){
+     let parent = document.getElementsByTagName("nav")[0]
+     let newLink = document.createElement('a')
+     newLink.setAttribute('href', '#')
+     newLink.innerText = 'newOne'
+     parent.appendChild(newLink)
+   }
+
+   let changeTitle = function(){
+     let title = document.getElementsByTagName("h1")[0]
+     title.style.color='black'
+   }
+
+   let jumboColor = function(){
+     let parent = document.querySelector(".jumbotron").classList.remove('bg-dark')
+     parent.classList.add('bg-white')
+   }
+
+   let erasEm = function(){
+     let parent = document.querySelectorAll("aside>:nth-child(3)>ol>li>a")
+     console.log(parent);
+     for( let i = 0; i<parent.length; i++ ){
+       parent[i].innerHTML = ''
+     }
+   }
+
+   
+   
+
+
+
+
     </script>
   
 
