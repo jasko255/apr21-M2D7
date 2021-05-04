@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <!-- saved from url=(0436)https://s3.eu-west-1.amazonaws.com/eduflow-production/activity-resources/353731835510277.html?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA2TAWW44RCEE6YREN%2F20210504%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210504T120403Z&X-Amz-Expires=600&X-Amz-SignedHeaders=host&response-content-disposition=inline%3B%20filename%2A%3DUTF-8%27%27index.html&X-Amz-Signature=556bcae744394f73dc8b6dd705af9227b92597a08e64fdd1c8c67b4da9ba8e10 -->
-<html lang="en"><!--
+<html lang="en">
+  <!--
         "Selectors"
         Selectors helps targeting elements in the DOM.
         They are useful bot on CSS & JS.
@@ -12,9 +13,23 @@
 
         10 CSS Exercises
         10 JS Exercises
-    --><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    -->
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Blog Template · Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/blog/">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="./Blog Template · Bootstrap_files/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="./Blog Template · Bootstrap_files/css" rel="stylesheet">
     <style>
-      /*
+       /*
             EX1) Write a selector to target the title of the page
             EX2) Write a selector to target every children of the navbar
             EX3) Write a selector to target the "continue reading..." inside the jumbotron
@@ -26,20 +41,6 @@
             EX9) Write a selector to target the "back to top" link     #### EXTRA Try doing it without targeting the footer element directly
             EX10) Write a selector to target the footer
         */
-    </style>
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v3.8.5">
-    <title>Blog Template · Bootstrap</title>
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/blog/">
-
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="./Blog Template · Bootstrap_files/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -54,8 +55,33 @@
           font-size: 3.5rem;
         }
       }
+      title{
+          color:red; 
+        }
+        div>nav>a{
+         background-color: red; 
+        }
+        .jumbotron>div>:nth-child(3){
+          background-color: red !important;
+
+        }
+        div>.row.mb-2>:nth-child(1)>:nth-child(1){
+          background-color: red;
+        }
+        main>.row>div>:nth-child(2){
+          background-color: green;
+        }
+        div>nav>:nth-child(2n){
+         background-color: green; 
+        }
+        main>.row>div>:nth-child(4){
+          background-color:pink;
+        }
+
+        
+
     </style>
-    <link href="./Blog Template · Bootstrap_files/css" rel="stylesheet">
+   
   </head>
 
   <body>
@@ -396,4 +422,5 @@
     </script>
   
 
-</body></html>
+</body>
+</html>
