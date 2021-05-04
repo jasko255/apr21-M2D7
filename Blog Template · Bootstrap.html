@@ -457,9 +457,15 @@ main>.row>div>:nth-child(3)>p:first-of-type>a:first-child{
      }
    }
 
+   //EX15) Write a function to change the column size for post headings
    
-   
-
+   let colHead = function(){
+     let parent = document.querySelectorAll(".blog-post-title")
+     console.log(parent);
+     for( let i = 0; i<parent.length; i++ ){
+       parent[i].classList.add('col-2')
+     }
+   }
 
 
 
